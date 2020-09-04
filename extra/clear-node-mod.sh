@@ -5,5 +5,5 @@
 
 echo "Removing top level node modules"
 cd "$APP_CHECKOUT_DIR" && rm -rf ./node_modules
-rm -rf ./.meteor/local/bundler-cache
-rm -rf ./.meteor/local/plugin-cache
+cd "$APP_CHECKOUT_DIR" && rm -rf ./.meteor/local/plugin-cache
+cd "$APP_CHECKOUT_DIR" && rm -rf ./.meteor/local/bundler-cache
